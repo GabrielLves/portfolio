@@ -1,0 +1,92 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+background-color: #171717;
+text-decoration: none;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+color: white;
+
+
+
+}
+header{
+display: flex;
+justify-content: space-between;
+margin-bottom: 25px;
+
+}
+
+img{
+    width: 150px;
+}
+.logo{
+width: 105px;
+margin-left: 50px;
+
+}
+.tel{
+    margin-top: 50px;
+margin-right: 50px;
+
+
+}
+section{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+row-gap: 15px;
+margin: 100px;
+
+}
+input{
+   margin-left: 45%;
+    display: inline-block;
+    background-color: #f7b733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 50px;
+  
+
+
+}
+footer {
+   
+  display: flex;
+  justify-content: center;
+  }
+
+  .maps{
+margin-left: 20%;
+margin-top: 15px;
+margin-bottom: 15px;
+
+
+  }
+
+  .insta{
+    width: 50px;
+
+
+  }
+  .whats{
+    width: 50px;
+
+
+  }
+
+  @media (max-width: 500px) {
+    section{
+      display: grid;
+
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 15px;
+      margin: 100px;
+      
+      }
+    
+      
+  }

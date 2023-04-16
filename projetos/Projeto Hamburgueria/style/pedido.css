@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #171717;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+
+
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
+
+.logo {
+  width: 105px;
+  margin-left: 50px;
+
+}
+
+.tel {
+  margin-top: 50px;
+  margin-right: 50px;
+
+
+}
+
+section {
+  margin-left: 25%;
+
+
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+
+}
+
+input,
+button {
+  margin-left: 45%;
+  display: inline-block;
+  background-color: #f7b733;
+
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 18px;
+
+
+
+
+}
+
+footer {
+
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.insta {
+  width: 50px;
+
+
+}
+
+.whats {
+  width: 50px;
+
+
+}
+
+@media (max-width: 500px) {
+  section {
+    margin-left: 0%;
+
+
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+  }
+
+  input,
+  button {
+    margin-left: 0%;
+    display: inline-block;
+    background-color: #f7b733;
+
+    border: none;
+    padding: 10px 17px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 15px;
+
+
+
+
+  }
+
+
+}

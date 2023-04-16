@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburgueria</title>
+    <link rel="stylesheet" href="style/pagina-de-obrigado.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img class="logo" src="img/Logo Escura.png" alt="logo"></a>
+
+        <h2 class="tel">Contato: (62)9999-9999</h2>
+    </header>
+    <hr>
+
+    <section>
+
+        <h1 id="mensagem"></h1>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const mensagem = urlParams.get('mensagem');
+
+            document.getElementById('mensagem').textContent = mensagem;
+        </script>
+
+    </section>
+
+    <br>
+    <h2 class="obrigado">Muito obrigado!</h2>
+
+    <hr>
+    <footer>
+        <a href="http://https://wa.me/62999999999" target="_blank" rel="noopener noreferrer"><img class="insta"
+                src="img/whatspp.png" alt="whatsapp"></a>
+        <a href="http://instagram.com" target="_blank" rel="noopener noreferrer"><img class="insta" src="img/insta.png"
+                alt="Instagram"></a>
+    </footer>
+
+
+
+</body>
+
+</html>

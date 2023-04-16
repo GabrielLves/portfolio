@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Aluguel de Carros</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/logo.png"></a>
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#"><li>sobre</li></a>
+           
+        </ul>
+
+    </header>
+    <section>
+	<h1>Simule o aluguel do seu carro</h1>
+	<form id="formulario">
+       
+		<label for="dias">Quantidade de dias:</label>
+		<input type="number" id="dias" name="dias" required>
+		<br><br>
+		<label for="km">Quantidade de Km percorridos:</label>
+		<input type="number" id="km" name="km" required>
+		<br><br>
+		<button type="submit">Calcular</button>
+    </section>
+	</form>
+	<table id="tabela" style="display:none;">
+		<tr>
+			<th>Valor do aluguel por dia</th>
+			<td id="valorDia"></td>
+		</tr>
+		<tr>
+			<th>Valor do aluguel por Km rodado</th>
+			<td id="valorKm"></td>
+		</tr>
+		<tr>
+			<th>Total de dias alugados</th>
+			<td id="totalDias"></td>
+		</tr>
+		<tr>
+			<th>Total de Km rodados</th>
+			<td id="totalKm"></td>
+		</tr>
+		<tr>
+			<th>Total a pagar</th>
+			<td id="total"></td>
+		</tr>
+	</table>
+	<a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img class="whats" src="img/whatsapp.png" alt="whatsapp"></a>
+    
+	<script>
+		const formulario = document.getElementById('formulario');
+		const tabela = document.getElementById('tabela');
+		const valorDia = document.getElementById('valorDia');
+		const valorKm = document.getElementById('valorKm');
+		const totalDias = document.getElementById('totalDias');
+		const totalKm = document.getElementById('totalKm');
+		const total = document.getElementById('total');
+
+		formulario.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const dias = parseInt(document.getElementById('dias').value);
+			const km = parseInt(document.getElementById('km').value);
+			const valorAluguelDia = 105;
+			const valorKmRodado = 0.35;
+
+			valorDia.innerText = `R$ ${valorAluguelDia.toFixed(2)}`;
+			valorKm.innerText = `R$ ${valorKmRodado.toFixed(2)}`;
+			totalDias.innerText = dias;
+			totalKm.innerText = `${km} Km`;
+
+			const valorAluguel = (dias * valorAluguelDia) + (km * valorKmRodado);
+			total.innerText = `R$ ${valorAluguel.toFixed(2)}`;
+
+			tabela.style.display = 'table';
+		});
+	</script>
+</body>
+</html>

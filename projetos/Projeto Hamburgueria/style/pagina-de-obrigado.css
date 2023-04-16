@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #171717;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 150px;
+}
+
+.logo {
+  width: 105px;
+  margin-left: 50px;
+}
+
+.tel {
+  margin-top: 50px;
+  margin-right: 50px;
+}
+
+section,
+.obrigado {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 40%;
+  padding: 50px;
+  text-align: center;
+}
+
+footer {
+
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.insta {
+  width: 50px;
+
+
+}
+
+.whats {
+  width: 50px;
+
+
+}
